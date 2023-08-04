@@ -3,6 +3,8 @@ import 'package:flutterutils/camera_screen.dart';
 import 'package:flutterutils/barcode_scanner.dart';
 import 'package:flutterutils/read_sms.dart';
 
+import 'file_reader.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -48,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _fileUtils() {
     Navigator.of(context).push(MaterialPageRoute(
-      builder: (context) => const QRViewExample(),
+      builder: (context) => ReadAndWriteInFile(),
     ));
   }
 
